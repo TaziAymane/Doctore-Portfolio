@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Faissal Lkwisse - Medical Professional Portfolio</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loading-content">
+            <div class="medical-cross">
+                <div class="cross-horizontal"></div>
+                <div class="cross-vertical"></div>
+            </div>
+            <p class="loading-text">Loading...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-stethoscope me-2"></i>
+                Dr. Faissal Lkwisse
+            </a>
+            
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle me-3">
+                <input type="checkbox" id="theme-switch" class="theme-switch">
+                <label for="theme-switch" class="theme-label">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="medical-particles"></div>
+        </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-8 mx-auto text-center">
+                    <h1 class="hero-title">
+                        <span class="typing-text" id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="1000">
+                        Cardiothoracic Surgeon | Medical Researcher | Healthcare Innovator
+                    </p>
+                    <p class="hero-description" data-aos="fade-up" data-aos-delay="1200">
+                        Dedicated to advancing cardiac care through innovative surgical techniques and compassionate patient care
+                    </p>
+                    <div class="hero-buttons" data-aos="fade-up" data-aos-delay="1400">
+                        <a href="#about" class="btn btn-primary btn-lg me-3 smooth-scroll">
+                            <i class="fas fa-user-md me-2"></i>
+                            Learn More
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg smooth-scroll">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            Schedule Consultation
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">About Dr. Faissal</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="200"></div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-right">
+                    <div class="profile-image-container">
+                        <img src="./WhatsApp Image 2025-06-20 à 14.59.11_36c76f86.jpg" alt="Dr. Faissal Lkwisse" class="profile-image">
+                        <div class="profile-border"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3 class="mb-4">Pioneering Excellence in Cardiac Care</h3>
+                        <p class="lead mb-4">
+                            With over 15 years of experience in cardiothoracic surgery, Dr. Faissal Lkwisse has established herself as a leading expert in minimally invasive cardiac procedures and heart transplantation.
+                        </p>
+                        <p class="mb-4">
+                            Dr. Johnson completed her medical degree at Harvard Medical School, followed by a residency in General Surgery at Johns Hopkins Hospital and a fellowship in Cardiothoracic Surgery at Mayo Clinic. She is board-certified by the American Board of Thoracic Surgery and holds multiple subspecialty certifications.
+                        </p>
+                        
+                        <!-- Skills Progress Bars -->
+                        <div class="skills-section mt-5">
+                            <h4 class="mb-4">Areas of Expertise</h4>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Cardiac Surgery</span>
+                                    <span>98%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-width="98"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Minimally Invasive Procedures</span>
+                                    <span>95%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Heart Transplantation</span>
+                                    <span>92%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-width="92"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item mb-3">
+                                <div class="d-flex justify-content-between mb-1">
+                                    <span>Medical Research</span>
+                                    <span>90%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar" data-width="90"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3 class="text-center mb-5" data-aos="fade-up">Career Timeline</h3>
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2023 - Present</h4>
+                                <h5>Chief of Cardiothoracic Surgery</h5>
+                                <p>Metropolitan Medical Center</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2018 - 2023</h4>
+                                <h5>Senior Attending Surgeon</h5>
+                                <p>University Hospital System</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="300">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2015 - 2018</h4>
+                                <h5>Cardiothoracic Surgery Fellowship</h5>
+                                <p>Mayo Clinic, Rochester</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2009 - 2015</h4>
+                                <h5>General Surgery Residency</h5>
+                                <p>Johns Hopkins Hospital</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="500">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4>2005 - 2009</h4>
+                                <h5>Doctor of Medicine</h5>
+                                <p>Harvard Medical School</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Medical Services</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="200"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                        Comprehensive cardiac care with cutting-edge surgical techniques
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h4>Cardiac Surgery</h4>
+                        <p>Advanced surgical procedures for heart conditions including bypass surgery, valve repair, and complex cardiac reconstructions.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Coronary Artery Bypass</li>
+                                <li>Valve Replacement/Repair</li>
+                                <li>Aortic Surgery</li>
+                                <li>Congenital Heart Surgery</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lungs"></i>
+                        </div>
+                        <h4>Thoracic Surgery</h4>
+                        <p>Specialized procedures for chest and lung conditions using minimally invasive techniques whenever possible.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Lung Resection</li>
+                                <li>Thoracoscopic Surgery</li>
+                                <li>Chest Wall Reconstruction</li>
+                                <li>Mediastinal Surgery</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h4>Heart Transplantation</h4>
+                        <p>Comprehensive heart transplant program including evaluation, surgery, and long-term follow-up care.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Transplant Evaluation</li>
+                                <li>Heart Transplant Surgery</li>
+                                <li>Post-Transplant Care</li>
+                                <li>Mechanical Circulatory Support</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <h4>Minimally Invasive Surgery</h4>
+                        <p>Advanced laparoscopic and robotic surgical techniques for faster recovery and better outcomes.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Robotic Cardiac Surgery</li>
+                                <li>Thoracoscopic Procedures</li>
+                                <li>Endoscopic Surgery</li>
+                                <li>Catheter-Based Interventions</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-user-md"></i>
+                        </div>
+                        <h4>Consultation Services</h4>
+                        <p>Expert medical consultations and second opinions for complex cardiac and thoracic conditions.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Second Opinion Consultations</li>
+                                <li>Surgical Planning</li>
+                                <li>Risk Assessment</li>
+                                <li>Treatment Options Review</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h4>Research & Innovation</h4>
+                        <p>Leading clinical research in cardiac surgery and developing innovative treatment approaches.</p>
+                        <div class="service-details">
+                            <ul>
+                                <li>Clinical Trials</li>
+                                <li>Surgical Innovation</li>
+                                <li>Medical Device Development</li>
+                                <li>Academic Publications</li>
+                            </ul>
+                        </div>
+                        <button class="btn btn-outline-primary btn-sm toggle-details">
+                            <span class="details-text">View Details</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Professional Achievements</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="200"></div>
+                </div>
+            </div>
+            
+            <!-- Statistics Counters -->
+            <div class="row mb-5">
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Years of Experience</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <div class="stat-number" data-count="2500">0</div>
+                        <div class="stat-label">Patients Treated</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-procedures"></i>
+                        </div>
+                        <div class="stat-number" data-count="1200">0</div>
+                        <div class="stat-label">Surgeries Performed</div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <div class="stat-number" data-count="45">0</div>
+                        <div class="stat-label">Research Publications</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certifications and Awards -->
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <h3 class="mb-4">Certifications & Licenses</h3>
+                    <div class="certification-list">
+                        <div class="certification-item" data-bs-toggle="tooltip" title="Board Certified in Thoracic Surgery">
+                            <div class="cert-badge">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h5>American Board of Thoracic Surgery</h5>
+                                <p>Board Certified - 2015</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item" data-bs-toggle="tooltip" title="Advanced Cardiac Life Support Certified">
+                            <div class="cert-badge">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h5>ACLS Certification</h5>
+                                <p>American Heart Association - Current</p>
+                            </div>
+                        </div>
+                        
+                        <div class="certification-item" data-bs-toggle="tooltip" title="Fellow of the American College of Surgeons">
+                            <div class="cert-badge">
+                                <i class="fas fa-user-graduate"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h5>Fellow, American College of Surgeons</h5>
+                                <p>FACS - 2016</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 mb-4" data-aos="fade-left">
+                    <h3 class="mb-4">Awards & Recognition</h3>
+                    <div class="award-list">
+                        <div class="award-item">
+                            <div class="award-year">2023</div>
+                            <div class="award-content">
+                                <h5>Excellence in Cardiac Surgery Award</h5>
+                                <p>American Association for Thoracic Surgery</p>
+                            </div>
+                        </div>
+                        
+                        <div class="award-item">
+                            <div class="award-year">2022</div>
+                            <div class="award-content">
+                                <h5>Top Doctor Recognition</h5>
+                                <p>Metropolitan Medical Magazine</p>
+                            </div>
+                        </div>
+                        
+                        <div class="award-item">
+                            <div class="award-year">2021</div>
+                            <div class="award-content">
+                                <h5>Research Innovation Grant</h5>
+                                <p>National Heart Foundation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="award-item">
+                            <div class="award-year">2020</div>
+                            <div class="award-content">
+                                <h5>Outstanding Physician Award</h5>
+                                <p>State Medical Association</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Patient Testimonials</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="200"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                        Hear from patients whose lives have been transformed through expert cardiac care
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">
+                                            "Dr. Johnson saved my life. Her expertise in cardiac surgery and compassionate care made all the difference during my heart transplant journey. I'm forever grateful for her dedication and skill."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <img src="/placeholder.svg?height=60&width=60" alt="Patient" class="author-image">
+                                            <div class="author-info">
+                                                <h5>Michael R.</h5>
+                                                <p>Heart Transplant Patient</p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">
+                                            "The minimally invasive procedure Dr. Johnson performed exceeded all my expectations. My recovery was faster than anticipated, and the results were outstanding. Highly recommend her expertise."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <img src="/placeholder.svg?height=60&width=60" alt="Patient" class="author-image">
+                                            <div class="author-info">
+                                                <h5>Sarah L.</h5>
+                                                <p>Cardiac Surgery Patient</p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="testimonial-card">
+                                    <div class="testimonial-content">
+                                        <div class="quote-icon">
+                                            <i class="fas fa-quote-left"></i>
+                                        </div>
+                                        <p class="testimonial-text">
+                                            "Dr. Johnson's thorough approach and clear communication put me at ease throughout my treatment. Her surgical skills are exceptional, and her bedside manner is truly caring."
+                                        </p>
+                                        <div class="testimonial-author">
+                                            <img src="../MyPortfolio/WhatsApp Image 2025-03-27 à 13.40.52_b6f8bb03.jpg" alt="Patient" class="author-image">
+                                            <div class="author-info">
+                                                <h5>Robert K.</h5>
+                                                <p>Thoracic Surgery Patient</p>
+                                                <div class="rating">
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                    <i class="fas fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+                    <div class="section-divider" data-aos="fade-up" data-aos-delay="200"></div>
+                    <p class="section-description" data-aos="fade-up" data-aos-delay="300">
+                        Schedule a consultation or reach out for more information
+                    </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="contact-form-container" data-aos="fade-up" data-aos-delay="400">
+                        <form id="contactForm" class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="firstName">First Name *</label>
+                                        <input type="text" class="form-control" id="firstName" name="firstName" required>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="lastName">Last Name *</label>
+                                        <input type="text" class="form-control" id="lastName" name="lastName" required>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="email">Email Address *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <div class="form-group">
+                                        <label for="phone">Phone Number</label>
+                                        <input type="tel" class="form-control" id="phone" name="phone">
+                                        <div class="invalid-feedback"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <div class="form-group">
+                                    <label for="subject">Subject *</label>
+                                    <select class="form-control" id="subject" name="subject" required>
+                                        <option value="">Select a subject</option>
+                                        <option value="consultation">Schedule Consultation</option>
+                                        <option value="second-opinion">Second Opinion</option>
+                                        <option value="general">General Inquiry</option>
+                                        <option value="research">Research Collaboration</option>
+                                    </select>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <div class="form-group">
+                                    <label for="message">Message *</label>
+                                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                                    <div class="invalid-feedback"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">
+                                    <span class="btn-text">Send Message</span>
+                                    <span class="btn-loading d-none">
+                                        <i class="fas fa-spinner fa-spin me-2"></i>
+                                        Sending...
+                                    </span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Information -->
+            <div class="row mt-5">
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Office Location</h4>
+                        <p>
+                            Metropolitan Medical Center<br>
+                            123 Healthcare Drive, Suite 500<br>
+                            Medical City, MC 12345
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Phone</h4>
+                        <p>
+                            Office: (555) 123-4567<br>
+                            Emergency: (555) 987-6543<br>
+                            Fax: (555) 123-4568
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-info-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Office Hours</h4>
+                        <p>
+                            Monday - Friday: 8:00 AM - 6:00 PM<br>
+                            Saturday: 9:00 AM - 2:00 PM<br>
+                            Sunday: Emergency Only
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Media Links -->
+            <div class="row mt-4">
+                <div class="col-lg-12 text-center">
+                    <h4 class="mb-3">Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link" data-bs-toggle="tooltip" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="social-link" data-bs-toggle="tooltip" title="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link" data-bs-toggle="tooltip" title="ResearchGate">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <a href="#" class="social-link" data-bs-toggle="tooltip" title="ORCID">
+                            <i class="fab fa-orcid"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="mb-0">© 2024 Dr. Faissal Lkwisse, MD. All rights reserved.</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <a href="#" class="text-white me-3">Privacy Policy</a>
+                    <a href="#" class="text-white me-3">Terms of Service</a>
+                    <button id="printBtn" class="btn btn-outline-light btn-sm">
+                        <i class="fas fa-print me-1"></i>
+                        Print CV
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="./script.js"></script>
+</body>
+</html>
