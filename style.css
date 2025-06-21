@@ -1138,13 +1138,13 @@ section {
 }
 
 .footer a {
-  color: white;
-  text-decoration: none;
+  /* color: white; */
+  /* text-decoration: none; */
   transition: var(--transition);
 }
 
 .footer a:hover {
-  color: var(--accent-color);
+  /* color: var(--accent-color); */
 }
 
 /* Print Styles */
